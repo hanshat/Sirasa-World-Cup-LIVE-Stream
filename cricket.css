@@ -1,0 +1,350 @@
+body {
+	background-image: url("../images/body-bg.jpg");
+	background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
+	/* min-height: 150vh; */
+}
+
+@font-face {
+	font-family: Inter;
+	src: url("../fonts/Inter-Regular.ttf");
+}
+
+.navbar {
+	background-color: #300073;
+}
+
+.navbar-toggler-icon {
+	background-image: url(' "/images/588a64e7d06f6719692a2d11.png"');
+	width: 25px;
+	height: 30px;
+	background-size: contain;
+}
+
+.navbar-image {
+	margin: 0;
+	max-width: 70%;
+	height: auto;
+	padding-left: 23%;
+}
+
+/* Border between Social links and login Button */
+.vr {
+	border: 1px solid white;
+	height: 2rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	opacity: 20%;
+}
+
+.right-logo {
+	float: right;
+}
+
+.mediaplayer {
+	width: 70%;
+}
+
+/*navbar hover*/
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu {
+		display: none;
+		background-color: #300073;
+		color: grey;
+		opacity: 90%;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.navbar .nav-item:hover .nav-link {
+		color: white;
+
+	}
+
+	.navbar .nav-item:hover .dropdown-menu {
+		display: block;
+	}
+
+	.navbar .nav-item .dropdown-menu a {
+		color: gray;
+		text-decoration: none;
+		background-color: transparent;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.navbar .nav-item .dropdown-menu a:hover {
+		color: white;
+		background-color: transparent;
+	}
+
+	.navbar .nav-item .dropdown-menu {
+		margin-top: 0;
+		border: none;
+		box-shadow: none;
+	}
+
+}
+
+/* footer */
+.footer {
+	background-size: cover;
+	background-color: #300073;
+
+}
+
+/* Item Tile */
+.tile-mod {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+.tile-img {
+	display: block;
+	position: relative;
+}
+
+.tile-img:hover .text-overlay {
+	opacity: 1;
+	transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.pr-image {
+	width: 100%;
+	border-radius: 0.5vw;
+	position: relative;
+	overflow: hidden;
+	box-shadow: none;
+	border: solid transparent 2px;
+	transition: all 0.3s ease-in-out;
+}
+
+.tile-mod:hover .pr-image {
+	box-shadow: 0 0 7px #FF07AA;
+	border-color: #FF07AA;
+	border-width: 2px;
+}
+
+.epiName {
+	font-size: 18px;
+	margin-bottom: 0;
+	margin-top: 2px;
+	color: white;
+	font-weight: 600;
+}
+
+.epiTag {
+	font-size: 12px;
+	margin-bottom: 0;
+	color: white;
+	opacity: 50%;
+}
+
+.epiDate {
+	font-size: 14px;
+	margin-bottom: 0;
+	color: white;
+	opacity: 50%;
+	display: grid;
+	justify-content: end;
+}
+
+.topic {
+	font-size: 20px;
+	padding: 50px 0 0 0px;
+}
+
+/* Banner */
+.mainBanner {
+	position: relative;
+
+	height: 500px;
+}
+
+.teamName {
+	font-size: 18px;
+	margin-bottom: 0;
+	margin-top: 2px;
+	color: rgb(66, 66, 66);
+	font-weight: 600;
+	padding-left: 10px;
+}
+
+.teamVS {
+	font-size: 18px;
+	color: white;
+	font-weight: 600;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: rgb(167, 167, 167);
+}
+
+.flag {
+	width: 5vw;
+	height: auto;
+	border: solid 2px #FF07AA;
+	box-shadow: 0 0 7px #FF07AA;
+}
+
+.flag-small {
+	width: 2vw;
+	height: auto;
+	border: solid 2px #FF07AA;
+	box-shadow: 0 0 7px #FF07AA;
+}
+
+.btn-banner {
+	position: absolute;
+	bottom: 2vw;
+	left: 4vw;
+	background-color: #32CF8A;
+	border: none;
+}
+
+.btn-banner:hover {
+	position: absolute;
+	bottom: 2vw;
+	left: 4vw;
+	background-color: #32CF8A;
+	box-shadow: 0 0 7px #32CF8A;
+}
+
+.flag-banner {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: white;
+	border-radius: 20px;
+	height: 100px;
+}
+
+.flag-banner-small {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	padding: 50px;
+	border-radius: 20px;
+}
+
+.mainBanner {
+	border-radius: 0.8vw;
+}
+
+.banner-image {
+	width: auto;
+	height: 110%;
+	object-fit: cover;
+}
+
+.icc_logo {
+	margin-left: auto;
+}
+
+@media only screen and (max-width: 992px) {
+	.mediaplayer {
+		width: 100%;
+	}
+
+	.navbar-image {
+		padding-left: 18%;
+		height: 30%;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	.mediaplayer {
+		width: 100%;
+		padding-top: 50px;
+	}
+
+	.navbar-image {
+		padding-left: 18%;
+		height: 30%;
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+	.flag {
+		width: 10vw;
+		height: auto;
+		border: solid 2px #FF07AA;
+		box-shadow: 0 0 7px #FF07AA;
+	}
+
+	.teamName {
+		font-size: 14px;
+		padding-left: 0px;
+	}
+
+	.navbar-image {
+		padding-left: 0;
+		margin-left: 6% !important;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	.navbar-image {
+		margin-left: 5% !important;
+	}
+
+	.icclogo {
+		width: 60% !important;
+		height: 60% !important;
+	}
+
+	.sirasalogo {
+		width: 60% !important;
+		height: 60% !important;
+	}
+
+	.icc_logo {
+		margin-right: -17px !important;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.navbar-image {
+		margin-left: 3% !important;
+	}
+}
+
+
+@media only screen and (max-width: 420px) {
+	.navbar-image {
+		margin-left: 2% !important;
+	}
+
+	.epiName {
+		font-size: 16px !important;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	.navbar-image {
+		margin-left: 1% !important;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.sirasa_logo {
+		width: 13% !important;
+	}
+
+	.icclogo {
+		width: 51% !important;
+	}
+
+	.icc_logo {
+		margin-right: -24px !important;
+	}
+
+	.navbar-image {
+		margin-left: 3px !important;
+	}
+
+}
