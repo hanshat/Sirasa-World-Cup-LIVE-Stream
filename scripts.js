@@ -1,10 +1,10 @@
-var MAIN_URL = "https://apilive.sirasatv.lk";
+var MAIN_URL = "http://wmycmgz.mleetv.xyz:80/live/0805338770/5537394058/401172759.m3u8";
 
 function initialize() {
   loadNowPlaying();
   loadAllMatches();
   loadNextMatches();
-};
+}; 
 
 function loadNowPlaying() {
   $.get(MAIN_URL + "/match/NOW_PLAYING", function (data) {
